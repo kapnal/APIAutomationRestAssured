@@ -60,7 +60,7 @@ public class RestTestCase {
                 .when().log().all()
                 .get()
 
-                .then().log().all().statusCode(200);
+                .then().log().all().statusCode(201);
 
 
 
