@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.060">
+           time="1.132">
     <properties></properties>
 
 
 
             <testcase
-                name="testBDDStylePOSTPositive"
-                time="4.060"
-                classname="org.example.tests.crud.POST.BDDStylePOST">
+                name="testNonBDDStylePUTReq"
+                time="1.132"
+                classname="org.example.testng.TestNG003">
             </testcase>
 </testsuite>

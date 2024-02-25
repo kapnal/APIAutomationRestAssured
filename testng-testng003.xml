@@ -3,9 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured">
         <classes>
-            <class name="org.example.tests.crud.POST.BDDStylePOST">
-            </class>
-            <class name="org.example.tests.crud.POST.NonBDDStyleCreatebookingPOST">
+            <class name="org.example.testng.TestNG003">
             </class>
         </classes>
     </test>
