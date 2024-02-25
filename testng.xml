@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured">
         <classes>
-            <class name="org.example.tests.crud.GET.GETRequestNonBDDTestNG">
+            <class name="GET.org.example.GETRequestNonBDDTestNG">
                 <methods>
                     <include name="testGetAllBookingNegative"/>
                     <include name="testGetAllBookingNegative2"/>

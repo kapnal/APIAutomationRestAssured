@@ -1,19 +1,30 @@
 package org.example.tests.crud.GET;
 
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.testng.annotations.Test;
 
 public class NonBDDStyleGET {
-    public static void main(String[] args) {
+    RequestSpecification requestSpecification;
+    ValidatableResponse validatableResponse;
+@Test
+public void testNonBDDStyleGETPositive(){
 
         // https://restful-booker.herokuapp.com/booking/4366
 
-        RequestSpecification r = RestAssured.given();
+    requestSpecification = RestAssured.given().log().all();
+    requestSpecification.baseUri("https://restful-booker.herokuapp.com");
+    requestSpecification.basePath("/booking/3679");
 
-        r.baseUri("https://restful-booker.herokuapp.com");
-        r.basePath("/booking/1883").log().all();
-        r.when().get();
-        r.then().log().all().statusCode(200);
+    Response response = requestSpecification.when().get();
+
+   validatableResponse = response.then().log().all();
+    validatableResponse.statusCode(200);
+
+
+
 
 
 

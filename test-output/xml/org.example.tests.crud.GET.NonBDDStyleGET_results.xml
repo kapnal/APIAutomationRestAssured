@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.989">
+    <properties></properties>
+
+
+
+            <testcase
+                name="testNonBDDStyleGETPositive"
+                time="2.989"
+                classname="org.example.tests.crud.GET.NonBDDStyleGET">
+            </testcase>
+</testsuite>

@@ -11,13 +11,13 @@ public class NonBDDStyleDELETE {
 
     RequestSpecification requestSpecification;
     ValidatableResponse validatableResponse;
-    String token = "19cdb31e8b7bcbb";
+    String token = "7d60f7a31c150ff";
     @Test
     public void testDELETEREQUEST(){
 
         requestSpecification = RestAssured.given();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
-        requestSpecification.basePath("/booking/207");
+        requestSpecification.basePath("/booking/1104");
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.cookie("token",token);
         Response response = requestSpecification.when().delete();
