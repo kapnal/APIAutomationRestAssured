@@ -1,4 +1,4 @@
-package org.example.testng;
+package org.example.testng.testmgexamples;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -9,16 +9,17 @@ import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.Assert;
-import static org.assertj.core.api.Assertions.*;
 
-public class TestNG003 {
+public class TestNG006 {
+
+    String token;
+    Integer bookingId;
     RequestSpecification requestSpecification;
     ValidatableResponse validatableResponse;
-    String token;
 
     @BeforeTest
-    public void getToken(){
+    public void  getToken(){
+
         String payload ="{\n" +
                 "        \"username\": \"admin\",\n" +
                 "        \"password\": \"password123\"\n" +
@@ -29,23 +30,42 @@ public class TestNG003 {
         requestSpecification.basePath("/auth");
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.body(payload);
-        Response response = requestSpecification.post();
+        Response response = requestSpecification.when().post();
         validatableResponse = response.then();
-
-        //Assertion 1 - Rest Assured Matchers (Hamcrest) - 1-2% Times we use
-//        validatableResponse.body("token", Matchers.notNullValue());
-//        token = response.then().log().all().extract().path("token");
-//        System.out.println(token);
-
-        //Assertion 2 - TestNG assertion
         token = response.then().log().all().extract().path("token");
         Assert.assertNotNull(token);
         System.out.println(token);
 
-        //Assertion 3 - AssertJ
-//        assertThat(token).isNotNull().isNotBlank().isNotEmpty();
-//        System.out.println(token);
+    }
+    @BeforeTest
+    public void getBookingID(){
 
+        String payload = "{\n" +
+                "    \"firstname\" : \"John\",\n" +
+                "    \"lastname\" : \"Smith\",\n" +
+                "    \"totalprice\" : 3588,\n" +
+                "    \"depositpaid\" : true,\n" +
+                "    \"bookingdates\" : {\n" +
+                "        \"checkin\" : \"2024-02-25\",\n" +
+                "        \"checkout\" : \"2024-02-27\"\n" +
+                "    },\n" +
+                "    \"additionalneeds\" : \"Breakfast\"\n" +
+                "}";
+
+        requestSpecification= RestAssured.given().log().all();
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
+        requestSpecification.basePath("/booking");
+        requestSpecification.contentType(ContentType.JSON);
+        requestSpecification.body(payload);
+        Response response = requestSpecification.when().post();
+
+        validatableResponse = response.then();
+        String responseString = response.asString();
+        System.out.println(responseString);
+        validatableResponse.statusCode(200);
+        bookingId = response.then().log().all().extract().path("bookingid");
+        Assert.assertNotNull(bookingId);
+        System.out.println(bookingId);
     }
 
     @Test
@@ -63,9 +83,9 @@ public class TestNG003 {
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
 
-        requestSpecification = RestAssured.given().log().all();
+        requestSpecification = RestAssured.given();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
-        requestSpecification.basePath("/booking/2354");
+        requestSpecification.basePath("/booking/"+bookingId);
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.cookie("token",token);
 
@@ -80,6 +100,5 @@ public class TestNG003 {
 
     }
 
+
 }
-
-

@@ -2,8 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured">
+        <groups>
+                <run>
+                     <include name = "sanity"></include>
+                    <exclude name = "smoke"></exclude>
+                </run>
+        </groups>
         <classes>
-            <class name="org.example.testng.testmgexamples.TestNG003">
+            <class name="org.example.testng.testmgexamples.TestNG008">
             </class>
         </classes>
     </test>

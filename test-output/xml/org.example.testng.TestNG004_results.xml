@@ -12,6 +12,6 @@
             <testcase
                 name="testPUTRUN"
                 time="0.002"
-                classname="org.example.testng.TestNG004">
+                classname="org.example.testng.testmgexamples.TestNG004">
             </testcase>
 </testsuite>

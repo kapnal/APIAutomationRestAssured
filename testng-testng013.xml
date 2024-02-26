@@ -2,8 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured">
+        <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="org.example.testng.testmgexamples.TestNG003">
+            <class name="org.example.testng.testmgexamples.TestNG013">
             </class>
         </classes>
     </test>

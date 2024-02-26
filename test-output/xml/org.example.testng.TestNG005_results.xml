@@ -12,6 +12,6 @@
             <testcase
                 name="t3"
                 time="0.002"
-                classname="org.example.testng.TestNG005">
+                classname="org.example.testng.testmgexamples.TestNG005">
             </testcase>
 </testsuite>
