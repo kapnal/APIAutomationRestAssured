@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.testng.listenerDemo.CustomListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured">
+        <groups>
+            <run>
+                <include name = "sanity"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.testng.listenerDemo.TC001">
+            </class>
+        </classes>
+    </test>
+</suite>

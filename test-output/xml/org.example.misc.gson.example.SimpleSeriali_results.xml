@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="6.428">
+           time="0.429">
     <properties></properties>
 
 
 
             <testcase
-                name="testNonBDDStylecreatebookingPOSTPositive"
-                time="6.428"
-                classname="org.example.tests.crud.POST.NonBDDStyleCreatebookingPOST">
+                name="test1"
+                time="0.429"
+                classname="org.example.misc.gson.example.SimpleSeriali">
             </testcase>
 </testsuite>
