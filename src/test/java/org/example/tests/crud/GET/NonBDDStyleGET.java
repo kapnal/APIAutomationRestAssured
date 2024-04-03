@@ -16,7 +16,7 @@ public void testNonBDDStyleGETPositive(){
 
     requestSpecification = RestAssured.given().log().all();
     requestSpecification.baseUri("https://restful-booker.herokuapp.com");
-    requestSpecification.basePath("/booking/4218");
+    requestSpecification.basePath("/booking/4027");
 
     Response response = requestSpecification.when().get();
 

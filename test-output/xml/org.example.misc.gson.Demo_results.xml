@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.939">
+           time="7.047">
     <properties></properties>
 
 
 
             <testcase
                 name="testPost"
-                time="5.939"
+                time="7.047"
                 classname="org.example.misc.gson.Demo">
             </testcase>
 </testsuite>

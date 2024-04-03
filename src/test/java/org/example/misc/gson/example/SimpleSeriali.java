@@ -1,6 +1,7 @@
 package org.example.misc.gson.example;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.testng.annotations.Test;
 
 public class SimpleSeriali {
@@ -22,7 +23,10 @@ public class SimpleSeriali {
 
         System.out.println(jsonEmployee);
 
-
+     Gson gsonBuilder = new GsonBuilder().setPrettyPrinting().create();
+     String employeejsonStringUsingBuilder = gsonBuilder.toJson(employee);
+        System.out.println("Pretty JSON String :- ");
+        System.out.println(employeejsonStringUsingBuilder);
 
     }
 

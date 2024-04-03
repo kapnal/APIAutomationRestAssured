@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.068">
+           time="8.422">
     <properties></properties>
 
 
 
             <testcase
-                name="test1"
-                time="0.068"
-                classname="org.example.misc.gson.example.SimpleSeriali">
+                name="testPositive"
+                time="8.422"
+                classname="org.example.misc.gson.PostReqTC">
             </testcase>
 </testsuite>

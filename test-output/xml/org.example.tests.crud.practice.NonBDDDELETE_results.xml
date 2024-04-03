@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.068">
+           time="2.852">
     <properties></properties>
 
 
 
             <testcase
-                name="test1"
-                time="0.068"
-                classname="org.example.misc.gson.example.SimpleSeriali">
+                name="testPutREQUEST"
+                time="2.852"
+                classname="org.example.tests.crud.practice.NonBDDDELETE">
             </testcase>
 </testsuite>
