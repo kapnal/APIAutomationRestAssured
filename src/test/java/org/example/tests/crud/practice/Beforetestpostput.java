@@ -1,4 +1,4 @@
-package org.example.testng.testmgexamples;
+package org.example.tests.crud.practice;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -9,17 +9,18 @@ import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.Assert;
-import static org.assertj.core.api.Assertions.*;
 
-public class TestNG003 {
+public class Beforetestpostput {
+
+    String token;
+    int bookingId;
     RequestSpecification requestSpecification;
     ValidatableResponse validatableResponse;
-    String token;
 
     @BeforeTest
-    public void getToken(){
-        String payload ="{\n" +
+    public void  getToken(){
+
+        String payloadtoken = "{\n" +
                 "        \"username\": \"admin\",\n" +
                 "        \"password\": \"password123\"\n" +
                 "}";
@@ -28,30 +29,47 @@ public class TestNG003 {
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
         requestSpecification.basePath("/auth");
         requestSpecification.contentType(ContentType.JSON);
-        requestSpecification.body(payload);
+        requestSpecification.body(payloadtoken);
+
         Response response = requestSpecification.when().post();
         validatableResponse = response.then();
-
-        //Assertion 1 - Rest Assured Matchers (Hamcrest) - 1-2% Times we use
-//        validatableResponse.body("token", Matchers.notNullValue());
-//        token = response.then().log().all().extract().path("token");
-//        System.out.println(token);
-
-        //Assertion 2 - TestNG assertion
-        token = response.then().log().all().extract().path("token");
-        Assert.assertNotNull(token);
+        token= response.then().log().all().extract().path("token");
         System.out.println(token);
 
-        //Assertion 3 - AssertJ
-//        assertThat(token).isNotNull().isNotBlank().isNotEmpty();
-//        System.out.println(token);
+    }
+
+    @BeforeTest
+    public void getBookingID(){
+
+        String payloadbookingid = "{\n" +
+                "    \"firstname\" : \"John\",\n" +
+                "    \"lastname\" : \"Smith\",\n" +
+                "    \"totalprice\" : 3588,\n" +
+                "    \"depositpaid\" : true,\n" +
+                "    \"bookingdates\" : {\n" +
+                "        \"checkin\" : \"2024-02-25\",\n" +
+                "        \"checkout\" : \"2024-02-27\"\n" +
+                "    },\n" +
+                "    \"additionalneeds\" : \"Breakfast\"\n" +
+                "}";
+        requestSpecification = RestAssured.given();
+        requestSpecification.baseUri("https://restful-booker.herokuapp.com");
+        requestSpecification.basePath("/booking");
+        requestSpecification.contentType(ContentType.JSON);
+        requestSpecification.body(payloadbookingid);
+
+        Response response = requestSpecification.when().post();
+        validatableResponse = response.then();
+        bookingId = response.then().log().all().extract().path("bookingid");
+        Assert.assertNotNull(bookingId);
+        System.out.println(bookingId);
 
     }
 
     @Test
     public void testNonBDDStylePUTReq(){
 
-        String payload = "{\n" +
+        String payloadput = "{\n" +
                 "    \"firstname\" : \"Pramod\",\n" +
                 "    \"lastname\" : \"Brown\",\n" +
                 "    \"totalprice\" : 111,\n" +
@@ -62,17 +80,14 @@ public class TestNG003 {
                 "    },\n" +
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
-
-        requestSpecification = RestAssured.given().log().all();
+        requestSpecification = RestAssured.given();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
-        requestSpecification.basePath("/booking/2947");
+        requestSpecification.basePath("/booking/"+bookingId);
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.cookie("token",token);
 
-        requestSpecification.body(payload);
-
+        requestSpecification.body(payloadput);
         Response response = requestSpecification.when().put();
-
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(200);
         validatableResponse.body("firstname", Matchers.equalTo("Pramod"));
@@ -80,6 +95,5 @@ public class TestNG003 {
 
     }
 
+
 }
-
-

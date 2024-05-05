@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.791">
+           time="0.065">
     <properties></properties>
 
 
 
             <testcase
-                name="testPOSTReq"
-                time="5.791"
-                classname="org.example.misc.payloadmap.PayloadUsingMap">
+                name="DeSerialization"
+                time="0.065"
+                classname="org.example.tests.crud.practice.PojoExamples.Deserialization">
             </testcase>
 </testsuite>

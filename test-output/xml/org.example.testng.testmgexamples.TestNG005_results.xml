@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.791">
+           time="0.002">
     <properties></properties>
 
 
 
             <testcase
-                name="testPOSTReq"
-                time="5.791"
-                classname="org.example.misc.payloadmap.PayloadUsingMap">
+                name="t3"
+                time="0.002"
+                classname="org.example.testng.testmgexamples.TestNG005">
             </testcase>
 </testsuite>

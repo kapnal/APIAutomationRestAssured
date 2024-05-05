@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.791">
+           time="7.412">
     <properties></properties>
 
 
 
             <testcase
-                name="testPOSTReq"
-                time="5.791"
-                classname="org.example.misc.payloadmap.PayloadUsingMap">
+                name="testPositive"
+                time="7.412"
+                classname="org.example.tests.crud.practice.PojoExamples.PostReqTC">
             </testcase>
 </testsuite>

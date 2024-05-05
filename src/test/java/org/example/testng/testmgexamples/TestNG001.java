@@ -12,6 +12,6 @@ public class TestNG001 {
 
     @Test
     public void testcase2(){
-        Assert.assertEquals(true,true);
+        Assert.assertEquals(false,true);
     }
 }

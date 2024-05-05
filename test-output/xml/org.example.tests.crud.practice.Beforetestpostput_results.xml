@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.791">
+           time="2.623">
     <properties></properties>
 
 
 
             <testcase
-                name="testPOSTReq"
-                time="5.791"
-                classname="org.example.misc.payloadmap.PayloadUsingMap">
+                name="testNonBDDStylePUTReq"
+                time="2.623"
+                classname="org.example.tests.crud.practice.Beforetestpostput">
             </testcase>
 </testsuite>

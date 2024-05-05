@@ -16,7 +16,7 @@ public class TestNG004 {
     @BeforeTest
     public void getTokenAndBookingID() {
         token = getToken();
-        bookingID = 123;
+        bookingID = 524;
     }
 
     @Test

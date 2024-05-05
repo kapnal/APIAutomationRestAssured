@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.008">
+           time="0.003">
     <properties></properties>
 
 
 
             <testcase
-                name="testLoginData"
-                time="0.006"
-                classname="org.example.testng.ddt.DDT01">
+                name="demo55"
+                time="0.001"
+                classname="org.example.testng.testmgexamples.TestNG002">
             </testcase>
             <testcase
-                name="testLoginData"
+                name="demo5"
                 time="0.002"
-                classname="org.example.testng.ddt.DDT01">
+                classname="org.example.testng.testmgexamples.TestNG002">
             </testcase>
 </testsuite>
