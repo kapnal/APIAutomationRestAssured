@@ -13,12 +13,12 @@ public class NonBDDStylePOST {
 
         // Pre Paration
 
-        RequestSpecification r = RestAssured.given().log().all();
-
         String payload = "{\n" +
                 "        \"username\": \"admin\",\n" +
                 "        \"password\": \"password123\"\n" +
                 "}";
+
+        RequestSpecification r = RestAssured.given().log().all();
         r.baseUri("https://restful-booker.herokuapp.com");
         r.basePath("/auth");
         r.contentType(ContentType.JSON);
@@ -32,7 +32,7 @@ public class NonBDDStylePOST {
 
         ValidatableResponse validatableResponse= response.then().log().all();
        String responseString = response.asString();
-        System.out.println(responseString);
+        //System.out.println(responseString);
        validatableResponse.statusCode(200);
 
     }

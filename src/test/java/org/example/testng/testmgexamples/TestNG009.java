@@ -15,10 +15,10 @@ public class TestNG009 {
         // Expected Result - pramod
         // Actual Result - Response? - pramod
 
-//        SoftAssert s = new SoftAssert();
-//        s.assertEquals(true,false,"True should not be equal to False");
-//        System.out.println("Please execute me");
-//        s.assertAll();
+        SoftAssert s = new SoftAssert();
+        s.assertEquals(true,false,"True should not be equal to False");
+        System.out.println("Please execute me");
+        s.assertAll();
 
         // Hard Assertion
         Assert.assertEquals(true,false,"Failed");

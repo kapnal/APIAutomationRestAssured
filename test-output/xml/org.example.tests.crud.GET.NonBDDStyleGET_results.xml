@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.625">
+           time="4.056">
     <properties></properties>
 
 
 
             <testcase
                 name="testNonBDDStyleGETPositive"
-                time="3.625"
+                time="4.056"
                 classname="org.example.tests.crud.GET.NonBDDStyleGET">
             </testcase>
 </testsuite>

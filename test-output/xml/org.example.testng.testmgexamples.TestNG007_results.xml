@@ -10,18 +10,18 @@
 
 
             <testcase
-                name="t1"
-                time="0.002"
+                name="t3"
+                time="0.010"
                 classname="org.example.testng.testmgexamples.TestNG007">
             </testcase>
             <testcase
-                name="t3"
-                time="0.008"
+                name="t1"
+                time="0.001"
                 classname="org.example.testng.testmgexamples.TestNG007">
             </testcase>
             <testcase
                 name="t2"
-                time="0.001"
+                time="0.000"
                 classname="org.example.testng.testmgexamples.TestNG007">
             </testcase>
 </testsuite>

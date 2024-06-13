@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured"
+<testsuite name="APIAutomationRestAssured"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.901">
+           time="5.807">
     <properties></properties>
 
 
 
             <testcase
                 name="testPutREQUEST"
-                time="4.901"
+                time="5.807"
                 classname="org.example.tests.crud.PUT.NonBDDStylePUT">
             </testcase>
 </testsuite>

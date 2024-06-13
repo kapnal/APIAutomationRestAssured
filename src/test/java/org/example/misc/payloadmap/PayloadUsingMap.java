@@ -47,6 +47,13 @@ public class PayloadUsingMap {
         requestSpecification.body(jsonBodyUsingMap).log().all();
 
 
+        Response response = requestSpecification.when().post();
+        Integer bookingId = response.then().extract().path("bookingid");
+        validatableResponse = response.then().log().all();
+        validatableResponse.statusCode(200);
+        System.out.println(bookingId);
+
+
 
 
     }

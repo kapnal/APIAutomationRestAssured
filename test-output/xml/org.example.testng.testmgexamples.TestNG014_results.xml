@@ -4,14 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.016">
+           time="0.007">
     <properties></properties>
 
 
 
             <testcase
                 name="loginTest"
-                time="0.003"
+                time="0.005"
+                classname="org.example.testng.testmgexamples.TestNG014">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="0.001"
+                classname="org.example.testng.testmgexamples.TestNG014">
+            </testcase>
+            <testcase
+                name="loginTest"
+                time="0.001"
                 classname="org.example.testng.testmgexamples.TestNG014">
             </testcase>
             <testcase
@@ -21,17 +31,7 @@
             </testcase>
             <testcase
                 name="loginTest"
-                time="0.004"
-                classname="org.example.testng.testmgexamples.TestNG014">
-            </testcase>
-            <testcase
-                name="loginTest"
-                time="0.007"
-                classname="org.example.testng.testmgexamples.TestNG014">
-            </testcase>
-            <testcase
-                name="loginTest"
-                time="0.002"
+                time="0.000"
                 classname="org.example.testng.testmgexamples.TestNG014">
             </testcase>
 </testsuite>
