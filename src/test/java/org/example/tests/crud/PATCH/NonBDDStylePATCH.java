@@ -12,7 +12,7 @@ public class NonBDDStylePATCH {
 
     RequestSpecification requestSpecification;
     ValidatableResponse validatableResponse;
-    String token = "930d22cfe05d82f";
+    String token = "8c11197d5bf1ce6";
 
     @Test
     public void testPatchRequest(){
@@ -24,7 +24,7 @@ public class NonBDDStylePATCH {
 
         requestSpecification = RestAssured.given().log().all();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
-        requestSpecification.basePath("/booking/1164");
+        requestSpecification.basePath("/booking/3658");
         requestSpecification.contentType(ContentType.JSON);
         requestSpecification.cookie("token",token);
         requestSpecification.body(payload).log().all();

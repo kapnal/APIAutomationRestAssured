@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.339">
+           time="5.125">
     <properties></properties>
 
 
 
             <testcase
+                name="testGetAllBookingNegative2"
+                time="1.075"
+                classname="org.example.tests.crud.GET.GETRequestNonBDDTestNG">
+            </testcase>
+            <testcase
                 name="testGetAllBookingPositive"
-                time="1.068"
+                time="1.177"
                 classname="org.example.tests.crud.GET.GETRequestNonBDDTestNG">
             </testcase>
             <testcase
                 name="testGetAllBookingNegative"
-                time="3.191"
-                classname="org.example.tests.crud.GET.GETRequestNonBDDTestNG">
-            </testcase>
-            <testcase
-                name="testGetAllBookingNegative2"
-                time="1.080"
+                time="2.873"
                 classname="org.example.tests.crud.GET.GETRequestNonBDDTestNG">
             </testcase>
 </testsuite>

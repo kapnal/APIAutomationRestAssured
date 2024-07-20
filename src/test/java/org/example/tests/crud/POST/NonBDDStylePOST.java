@@ -32,7 +32,7 @@ public class NonBDDStylePOST {
 
         ValidatableResponse validatableResponse= response.then().log().all();
        String responseString = response.asString();
-        //System.out.println(responseString);
+        System.out.println(responseString);
        validatableResponse.statusCode(200);
 
     }

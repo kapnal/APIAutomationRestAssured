@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.985">
+           time="6.369">
     <properties></properties>
 
 
 
             <testcase
                 name="testPOSTReq"
-                time="4.985"
+                time="6.369"
                 classname="org.example.misc.payloadmap.PayloadUsingMap">
             </testcase>
 </testsuite>

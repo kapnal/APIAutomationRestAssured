@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="APIAutomationRestAssured"
+<testsuite name="C:/Users/kapil/IdeaProjects/APIAutomationRestAssured"
            tests="2"
            failures="1"
            errors="0"
            skipped="0"
-           time="0.027">
+           time="0.017">
     <properties></properties>
 
             <testcase
                 name="test1"
-                time="0.026"
+                time="0.017"
                 classname="org.example.testng.listenerDemo.TC001">
 
             <failure type="java.lang.AssertionError" message="(null)">
@@ -22,7 +22,7 @@
 
             <testcase
                 name="test2"
-                time="0.001"
+                time="0.000"
                 classname="org.example.testng.listenerDemo.TC001">
             </testcase>
 </testsuite>

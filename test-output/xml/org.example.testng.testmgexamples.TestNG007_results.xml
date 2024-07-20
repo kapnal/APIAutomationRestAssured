@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.011">
+           time="0.010">
     <properties></properties>
 
 
 
             <testcase
                 name="t3"
-                time="0.010"
+                time="0.007"
                 classname="org.example.testng.testmgexamples.TestNG007">
             </testcase>
             <testcase
@@ -21,7 +21,7 @@
             </testcase>
             <testcase
                 name="t2"
-                time="0.000"
+                time="0.002"
                 classname="org.example.testng.testmgexamples.TestNG007">
             </testcase>
 </testsuite>

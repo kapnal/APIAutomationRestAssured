@@ -11,7 +11,7 @@ public class GETRequestNonBDDTestNG {
 
         RequestSpecification r = RestAssured.given();
         r.baseUri("https://restful-booker.herokuapp.com");
-        r.basePath("/booking/1629").log().all();
+        r.basePath("/booking/1847").log().all();
         r.when().get();
         r.then().log().all().statusCode(404);
 
