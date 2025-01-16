@@ -4,12 +4,12 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.037">
+           time="0.085">
     <properties></properties>
 
             <testcase
                 name="testCase01"
-                time="0.037"
+                time="0.085"
                 classname="org.example.testng.testmgexamples.TestNG009">
 
             <failure type="java.lang.AssertionError" message="The following asserts failed:

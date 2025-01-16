@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.010">
+           time="0.007">
     <properties></properties>
 
 
 
             <testcase
-                name="RegRun"
-                time="0.010"
+                name="sanityRun"
+                time="0.001"
                 classname="org.example.testng.testmgexamples.TestNG008">
             </testcase>
             <testcase
-                name="sanityRun"
-                time="0.000"
+                name="RegRun"
+                time="0.006"
                 classname="org.example.testng.testmgexamples.TestNG008">
             </testcase>
 </testsuite>

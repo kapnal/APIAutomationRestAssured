@@ -20,18 +20,19 @@ public class DBConnect {
         System.out.println(name);
         con.close();
 
+        //If we got error go to Services > start SQL Server Browser
 
-
-        String  connectionURL = "jdbc:sqlserver://LAPTOP-5TGTGEIF\\SQLEXPRESS;databaseName=Techsolution;user=sa;password=St@tion@123;encrypt=true;trustServerCertificate=true";
-        try {
-            System.out.print("Connecting to the server......");
-            try (Connection connection = DriverManager.getConnection(connectionURL))   {
-                System.out.println("Connected to the Server.");
-            }
-        }catch (Exception e){
-            System.out.println("I am not connected to the Server");
-            e.printStackTrace();
-        }
+//
+//        String  connectionURL = "jdbc:sqlserver://LAPTOP-5TGTGEIF\\SQLEXPRESS;databaseName=Techsolution;user=sa;password=St@tion@123;encrypt=true;trustServerCertificate=true";
+//        try {
+//            System.out.print("Connecting to the server......");
+//            try (Connection connection = DriverManager.getConnection(connectionURL))   {
+//                System.out.println("Connected to the Server.");
+//            }
+//        }catch (Exception e){
+//            System.out.println("I am not connected to the Server");
+//            e.printStackTrace();
+//        }
 
     }
 }

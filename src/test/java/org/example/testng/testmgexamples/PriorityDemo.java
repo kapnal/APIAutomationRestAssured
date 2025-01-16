@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 
 public class PriorityDemo {
 
-    @Test(priority = 1,groups = {"reg"})
+    @Test(priority = 2,groups = {"reg"})
     void demo1(){
         System.out.println("A");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     void demo2(){
         System.out.println("B");
     }

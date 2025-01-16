@@ -24,7 +24,7 @@ public class PayloadUsingMap {
         //Parent Map
         Map<String, Object> jsonBodyUsingMap = new LinkedHashMap<>();
         Faker faker = new Faker();   //Faker methos used to generate dynamic random data
-        String name = faker.name().fullName();
+       // String name = faker.name().fullName();
         jsonBodyUsingMap.put("firstname",faker.name().firstName());
         jsonBodyUsingMap.put("lastname",faker.name().lastName());
         jsonBodyUsingMap.put("totalprice", faker.random().nextInt(1000));

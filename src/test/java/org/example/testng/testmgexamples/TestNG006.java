@@ -83,7 +83,7 @@ public class TestNG006 {
                 "    \"additionalneeds\" : \"Breakfast\"\n" +
                 "}";
 
-        requestSpecification = RestAssured.given();
+        requestSpecification = RestAssured.given().log().all();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
         requestSpecification.basePath("/booking/"+bookingId);
         requestSpecification.contentType(ContentType.JSON);

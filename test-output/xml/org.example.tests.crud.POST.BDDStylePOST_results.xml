@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.088">
+           time="7.816">
     <properties></properties>
 
 
 
             <testcase
                 name="testBDDStylePOSTPositive"
-                time="5.088"
+                time="7.816"
                 classname="org.example.tests.crud.POST.BDDStylePOST">
             </testcase>
 </testsuite>
