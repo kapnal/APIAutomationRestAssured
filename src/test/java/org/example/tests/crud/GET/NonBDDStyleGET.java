@@ -23,6 +23,5 @@ public void testNonBDDStyleGETPositive(){
    validatableResponse = response.then().log().all();
     validatableResponse.statusCode(200);
 
-
     }
 }

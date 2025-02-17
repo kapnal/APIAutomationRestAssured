@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="5.807">
+           time="3.746">
     <properties></properties>
 
 
 
             <testcase
                 name="testPutREQUEST"
-                time="5.807"
+                time="3.746"
                 classname="org.example.tests.crud.PUT.NonBDDStylePUT">
             </testcase>
 </testsuite>

@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.005">
+           time="0.008">
     <properties></properties>
 
 
 
             <testcase
                 name="testPUTReq2"
-                time="0.001"
-                classname="org.example.testng.testmgexamples.TestNG004">
-            </testcase>
-            <testcase
-                name="testPUTRUN"
-                time="0.003"
+                time="0.002"
                 classname="org.example.testng.testmgexamples.TestNG004">
             </testcase>
             <testcase
                 name="testPUTReq3"
-                time="0.001"
+                time="0.002"
+                classname="org.example.testng.testmgexamples.TestNG004">
+            </testcase>
+            <testcase
+                name="testPUTRUN"
+                time="0.004"
                 classname="org.example.testng.testmgexamples.TestNG004">
             </testcase>
 </testsuite>

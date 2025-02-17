@@ -4,7 +4,7 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.012">
+           time="0.010">
     <properties></properties>
 
 
@@ -31,7 +31,7 @@
             </testcase>
             <testcase
                 name="loginTest"
-                time="0.009"
+                time="0.007"
                 classname="org.example.testng.testmgexamples.TestNG014">
             </testcase>
 </testsuite>

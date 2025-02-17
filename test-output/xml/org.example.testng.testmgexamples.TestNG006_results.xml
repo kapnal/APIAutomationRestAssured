@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.096">
+           time="1.219">
     <properties></properties>
 
 
 
             <testcase
                 name="testNonBDDStylePUTReq"
-                time="1.096"
+                time="1.219"
                 classname="org.example.testng.testmgexamples.TestNG006">
             </testcase>
 </testsuite>
