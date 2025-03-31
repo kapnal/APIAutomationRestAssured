@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.855">
+           time="4.989">
     <properties></properties>
 
 
 
             <testcase
                 name="testNonBDDStylecreatebookingPOSTPositive"
-                time="3.855"
+                time="4.989"
                 classname="org.example.tests.crud.POST.NonBDDStyleCreatebookingPOST">
             </testcase>
 </testsuite>
